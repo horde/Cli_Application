@@ -1,0 +1,41 @@
+{
+    "name": "horde/cli-application",
+    "description": "Library for creating command line applications",
+    "type": "library",
+    "homepage": "https://pear.horde.org",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Jan Schneider",
+            "email": "jan@horde.org",
+            "role": "lead"
+        },
+        {
+            "name": "Michael J Rubinsky",
+            "email": "mrubinsk@horde.org",
+            "role": "lead"
+        }
+    ],
+    "version": "1.0.0alpha1",
+    "time": "2017-10-17",
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "https://pear.horde.org"
+        }
+    ],
+    "require": {
+        "php": "^5.3",
+        "pear-pear.horde.org/Horde_Argv": "^2",
+        "pear-pear.horde.org/Horde_Cli": "^2"
+    },
+    "replace": {
+        "pear-pear.horde.org/Horde_Cli_Application": "1.*",
+        "pear-horde/Horde_Cli_Application": "1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Horde_Cli_Application": "lib/"
+        }
+    }
+}
