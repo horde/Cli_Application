@@ -16,7 +16,7 @@
   <email>mrubinsk@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-09</date>
+ <date>2017-10-30</date>
  <version>
   <release>1.0.0RC2</release>
   <api>1.0.0RC1</api>
@@ -41,6 +41,7 @@
         <file name="example-simple" role="doc" />
         <file name="MyApplication.php" role="doc" />
        </dir> <!-- /doc/Horde/Cli/Application/examples -->
+       <file name="CHANGES" role="doc" />
        <file name="LICENSE" role="doc" />
       </dir> <!-- /doc/Horde/Cli/Application -->
      </dir> <!-- /doc/Horde/Cli -->
@@ -82,6 +83,7 @@
  <phprelease>
   <filelist>
    <install as="LICENSE" name="doc/Horde/Cli/Application/LICENSE" />
+   <install as="CHANGES" name="doc/Horde/Cli/Application/CHANGES" />
    <install as="examples/example-class" name="doc/Horde/Cli/Application/examples/example-class" />
    <install as="examples/example-horde" name="doc/Horde/Cli/Application/examples/example-horde" />
    <install as="examples/example-simple" name="doc/Horde/Cli/Application/examples/example-simple" />
@@ -112,7 +114,7 @@
    <stability>
     <release>beta</release>
     <api>beta</api></stability>
-   <date>2017-10-09</date>
+   <date>2017-10-30</date>
    <license uri="http://www.horde.org/licenses/bsd">BSD</license>
    <notes>
 * 
