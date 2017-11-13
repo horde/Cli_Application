@@ -2,7 +2,7 @@
     "name": "horde/cli-application",
     "description": "Library for creating command line applications",
     "type": "library",
-    "homepage": "https://pear.horde.org",
+    "homepage": "https://www.horde.org",
     "license": "BSD",
     "authors": [
         {
@@ -17,7 +17,7 @@
         }
     ],
     "version": "1.0.0alpha1",
-    "time": "2017-10-17",
+    "time": "2017-11-11",
     "repositories": [
         {
             "type": "pear",
