@@ -35,3 +35,5 @@ dependencies:
     pear:
       pear.horde.org/Horde_Argv: ^2
       pear.horde.org/Horde_Cli: ^2
+autoload:
+  classmap: ['lib/']
