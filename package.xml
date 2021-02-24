@@ -3,7 +3,7 @@
  <name>Horde_Cli_Application</name>
  <channel>pear.horde.org</channel>
  <summary>Library for creating command line applications</summary>
- <description>A base class with supporting classes that builds a complete command line application.</description>
+ <description>A library that builds a complete command line application.</description>
  <lead>
   <name>Jan Schneider</name>
   <user>jan</user>
@@ -16,10 +16,10 @@
   <email>mrubinsk@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-11-11</date>
+ <date>2021-02-24</date>
  <version>
-  <release>1.0.0alpha1</release>
-  <api>1.0.0alpha1</api>
+  <release>2.0.0alpha1</release>
+  <api>2.0.0alpha1</api>
  </version>
  <stability>
   <release>alpha</release>
@@ -94,14 +94,14 @@
  <changelog>
   <release>
    <version>
-    <release>1.0.0alpha1</release>
-    <api>1.0.0alpha1</api>
+    <release>2.0.0alpha1</release>
+    <api>2.0.0alpha1</api>
    </version>
    <stability>
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-11-11</date>
+   <date>2021-02-24</date>
    <license uri="http://www.horde.org/licenses/bsd">BSD</license>
    <notes>
 * Initial release.
