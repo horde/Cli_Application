@@ -29,10 +29,10 @@ license:
   uri: http://www.horde.org/licenses/bsd
 dependencies:
   required:
-    php: ^5.3 || ^7
-    pear:
-      pear.horde.org/Horde_Argv: ^2
-      pear.horde.org/Horde_Cli: ^2
+    php: ^7
+    composer:
+      horde/argv: ^3
+      horde/cli: ^3
 autoload:
   classmap:
     - lib/
