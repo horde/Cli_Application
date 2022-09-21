@@ -30,6 +30,25 @@ use Horde\Cli\Application\Translation;
  * @package   Cli_Application
  *
  */
-class SingleCommandKernel implements KernelInterface
+class ModularKernel implements KernelInterface
 {
+    public function __construct()
+    {
+
+    }
+
+    public static function build(): ModularKernel
+    {
+        // We need an environment
+        // We need a CLI IO
+        // We need a list of Modules
+        // We need a config container
+
+        return new ModularKernel;
+    }
+
+    public function run()
+    {
+        // Preflight checks
+    }
 }
