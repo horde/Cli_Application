@@ -19,19 +19,13 @@
     "version": "1.0.0RC2",
     "time": "2017-11-14",
     "repositories": [
-        {
-            "type": "pear",
-            "url": "https://pear.horde.org"
-        }
     ],
     "require": {
         "php": "^5.3",
-        "pear-pear.horde.org/Horde_Argv": "^2",
-        "pear-pear.horde.org/Horde_Cli": "^2"
+        "horde/argv": "^2",
+        "horde/cli": "^2"
     },
     "replace": {
-        "pear-pear.horde.org/Horde_Cli_Application": "1.*",
-        "pear-horde/Horde_Cli_Application": "1.*"
     },
     "autoload": {
         "psr-0": {
