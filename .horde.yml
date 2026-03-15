@@ -19,10 +19,10 @@ authors:
     active: true
     role: lead
 version:
-  release: 2.0.0alpha4
+  release: 2.0.0-beta1
   api: 2.0.0alpha1
 state:
-  release: alpha
+  release: beta
   api: alpha
 license:
   identifier: BSD
@@ -36,3 +36,4 @@ dependencies:
 autoload:
   classmap:
     - lib/
+vendor: horde
