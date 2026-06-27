@@ -1,45 +1,14 @@
 ---
-2.0.0alpha4:
-  api: 2.0.0alpha1
+2.0.0:
+  api: 2.0.0
   state:
-    release: alpha
-    api: alpha
-  date: 2021-03-13
+    release: stable
+    api: stable
+  date: 2026-06-27
   license:
     identifier: BSD
-    uri: http://www.horde.org/licenses/bsd
-  notes: |+
-2.0.0alpha3:
-  api: 2.0.0alpha1
-  state:
-    release: alpha
-    api: alpha
-  date: 2021-03-13
-  license:
-    identifier: BSD
-    uri: http://www.horde.org/licenses/bsd
-  notes: |+
-2.0.0alpha2:
-  api: 2.0.0alpha1
-  state:
-    release: alpha
-    api: alpha
-  date: 2021-02-24
-  license:
-    identifier: BSD
-    uri: http://www.horde.org/licenses/bsd
-  notes: |+
-2.0.0alpha1:
-  api: 2.0.0alpha1
-  state:
-    release: alpha
-    api: alpha
-  date: 2021-02-24
-  license:
-    identifier: BSD
-    uri: http://www.horde.org/licenses/bsd
-  notes: |
-    Initial release.
+    uri: https://spdx.org/licenses/BSD.html
+  notes: "chore: refresh qc fixes and platform deps\nchore: Update workflow dependency"
 2.0.0-beta1:
   api: 2.0.0-beta1
   state:
@@ -49,8 +18,44 @@
   license:
     identifier: BSD
     uri: https://spdx.org/licenses/BSD.html
-  notes: |-
-    WIP add a modular CLI kernel
-    Add PSR-4 stub, allow PHP 8
-    Add CI job for satis repo update
-    Development mode for Cli_Application-2.0.0alpha5
+  notes: "WIP add a modular CLI kernel\nAdd PSR-4 stub, allow PHP 8\nAdd CI job for satis repo update\nDevelopment mode for Cli_Application-2.0.0alpha5"
+2.0.0alpha4:
+  api: 2.0.0alpha1
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-03-13
+  license:
+    identifier: BSD
+    uri: http://www.horde.org/licenses/bsd
+  notes: ''
+2.0.0alpha3:
+  api: 2.0.0alpha1
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-03-13
+  license:
+    identifier: BSD
+    uri: http://www.horde.org/licenses/bsd
+  notes: ''
+2.0.0alpha2:
+  api: 2.0.0alpha1
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-02-24
+  license:
+    identifier: BSD
+    uri: http://www.horde.org/licenses/bsd
+  notes: ''
+2.0.0alpha1:
+  api: 2.0.0alpha1
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-02-24
+  license:
+    identifier: BSD
+    uri: http://www.horde.org/licenses/bsd
+  notes: "Initial release.\n"
