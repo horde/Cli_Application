@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Copyright 2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2017-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (BSD). If you
  * did not receive this file, see http://www.horde.org/licenses/bsd.
@@ -65,7 +66,7 @@ class Application
      *                           Horde_Argv_Parser, e.g. 'usage', 'version',
      *                           'description', 'epilog'.
      */
-    public function __construct(Cli $cli = null, array $parserArgs = array())
+    public function __construct(?Cli $cli = null, array $parserArgs = [])
     {
         if ($cli) {
             $this->_cli = $cli;
@@ -96,10 +97,10 @@ class Application
     public function __call($method, $args)
     {
         if (method_exists($this->_cli, $method)) {
-            return call_user_func_array(array($this->_cli, $method), $args);
+            return call_user_func_array([$this->_cli, $method], $args);
         }
         if (method_exists($this->_parser, $method)) {
-            return call_user_func_array(array($this->_parser, $method), $args);
+            return call_user_func_array([$this->_parser, $method], $args);
         }
         throw new BadMethodCallException('Undefined method ' . $method);
     }
@@ -112,11 +113,11 @@ class Application
     public function __get($property)
     {
         switch ($property) {
-        case 'arguments':
-        case 'cli':
-        case 'parser':
-        case 'values':
-            return $this->{'_' . $property};
+            case 'arguments':
+            case 'cli':
+            case 'parser':
+            case 'values':
+                return $this->{'_' . $property};
         }
     }
 
@@ -129,11 +130,11 @@ class Application
     public function __set($property, $value)
     {
         switch ($property) {
-        case 'parser':
-            if (!($value instanceof Horde_Argv_Parser)) {
-                throw new InvalidArgumentException();
-            }
-            $this->_parser = $value;
+            case 'parser':
+                if (!($value instanceof Horde_Argv_Parser)) {
+                    throw new InvalidArgumentException();
+                }
+                $this->_parser = $value;
         }
     }
 
@@ -142,14 +143,12 @@ class Application
      */
     public function run()
     {
-        list($this->_values, $this->_arguments) = $this->_parser->parseArgs();
+        [$this->_values, $this->_arguments] = $this->_parser->parseArgs();
         $this->_doRun();
     }
 
     /**
      * Excecutes the actual application logic.
      */
-    protected function _doRun()
-    {
-    }
+    protected function _doRun() {}
 }

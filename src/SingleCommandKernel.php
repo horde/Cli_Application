@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Copyright 2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2017-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (BSD). If you
  * did not receive this file, see http://www.horde.org/licenses/bsd.
@@ -10,6 +11,7 @@
  * @license  http://www.horde.org/licenses/bsd BSD
  * @package  Cli_Application
  */
+
 namespace Horde\Cli\Application;
 
 use Horde_Argv_Parser as Parser;
@@ -30,6 +32,4 @@ use Horde\Cli\Application\Translation;
  * @package   Cli_Application
  *
  */
-class SingleCommandKernel implements KernelInterface
-{
-}
+class SingleCommandKernel implements KernelInterface {}

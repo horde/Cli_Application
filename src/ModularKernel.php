@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Copyright 2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2017-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (BSD). If you
  * did not receive this file, see http://www.horde.org/licenses/bsd.
@@ -10,6 +11,7 @@
  * @license  http://www.horde.org/licenses/bsd BSD
  * @package  Cli_Application
  */
+
 namespace Horde\Cli\Application;
 
 use Horde_Argv_Parser as Parser;
@@ -22,7 +24,7 @@ use Horde\Cli\Application\Translation;
  *
  * Composable kernel assembling an application from modules
  *
- * 
+ *
  * @author    Ralf Lang <ralf.lang@ralf-lang.de
  * @category  Horde
  * @copyright 2022 Horde LLC
@@ -32,10 +34,7 @@ use Horde\Cli\Application\Translation;
  */
 class ModularKernel implements KernelInterface
 {
-    public function __construct()
-    {
-
-    }
+    public function __construct() {}
 
     public static function build(): ModularKernel
     {
@@ -44,7 +43,7 @@ class ModularKernel implements KernelInterface
         // We need a list of Modules
         // We need a config container
 
-        return new ModularKernel;
+        return new ModularKernel();
     }
 
     public function run()
