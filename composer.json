@@ -3,7 +3,7 @@
     "description": "Library for creating command line applications",
     "type": "library",
     "homepage": "https://www.horde.org",
-    "license": "BSD",
+    "license": "BSD-2-Clause",
     "authors": [
         {
             "name": "Jan Schneider",
@@ -16,7 +16,7 @@
             "role": "lead"
         }
     ],
-    "time": "2026-06-27",
+    "time": "2026-07-01",
     "repositories": [],
     "require": {
         "php": "^7 || ^8",

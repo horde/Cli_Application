@@ -1,4 +1,14 @@
 ---
+2.0.1:
+  api: 2.0.1
+  state:
+    release: stable
+    api: stable
+  date: 2026-07-01
+  license:
+    identifier: BSD-2-Clause
+    uri: https://spdx.org/licenses/BSD-2-Clause.html
+  notes: "chore: Clarify license SPDX identifier as BSD-2-Clause\nchore: refresh CI bootstrap"
 2.0.0:
   api: 2.0.0
   state:
